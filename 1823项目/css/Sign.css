@@ -53,8 +53,8 @@ html, body {
 	height: auto;
 	background: #FFFFFF;
 	position: absolute;
-	top: 50%;
-	right: 160px;
+	top: 200px;
+	right: 170px;
 	border: 3px solid #c3c4c3;
 }
 
@@ -100,3 +100,90 @@ html, body {
 	display: inline-block;
 	float: left;
 }
+
+.input_Tip{
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	color: #aaa;
+	font-size: 14px;
+	line-height: 18px;
+	cursor: text;
+}
+
+.input{
+	width: 234px;
+	height: 40px;
+	line-height: 40px;
+	border: 0;
+	position: relative;
+	display: inline-block;
+	float: left;
+	
+}
+
+.mima{
+	width: 298px;
+	height: 40px;
+	position: relative;
+	margin: 0 0 20px;
+	border: 1px solid #ccc;
+}
+
+.icoPwd{
+	background: url(../img/Sign%20in/ico_pwd.png) center no-repeat;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	float: left;
+}
+
+.confirm{
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	border: 0;
+	background: #f60;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+}
+
+.nav_link{
+	padding: 15px 0 0 0;
+	font-size: 12px;
+}
+	
+.link_left{
+	float: left;
+}
+
+.link_right{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
