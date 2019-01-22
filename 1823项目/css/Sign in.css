@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  border: none;
+  vertical-align: middle; }
+
+html, body {
+  height: 100%; }
+
+
+.body_A{
+	background: #fff;
+}
+
+.login_bg{
+	width: 100%;
+}
+
+.login_header{
+	width: 919px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.login_header img{
+	padding-top: 25px;
+}
+
+.login_content{
+	width: 100%;
+	background: url(../img/Sign%20in/login-bg.png) center no-repeat;
+}
+
+.login_center{
+	height: 600px;
+	background: url(../img/Sign%20in/login-c.png) center no-repeat;
+}
+
+.login_block{
+	width: 360px;
+	height: auto;
+	background: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	right: 160px;
+	border: 3px solid #c3c4c3;
+}
+
+.login_denglu li{
+	float: left;
+	width: 122px;
+	height: 40px;
+	margin: 10px 26px 0 26px;
+	line-height: 36px;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.login_denglu li.active{
+	border-bottom: 4px solid #f60;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.active_box{
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	padding: 30px 0 0;
+}
+
+.zhanghao{
+	width: 300px;
+	height: 40px;
+	position: relative;
+	margin: 0 0 20px;
+	border: 1px solid #ccc;
+	margin-top: 40px;
+}
+
+.icoName{
+	background: url(../img/Sign%20in/ico_name.png) center no-repeat;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	float: left;
+}
