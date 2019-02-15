@@ -18,23 +18,21 @@
 			<!-- 内容 -->
 			<div class="login_content">
 				<div class="login_center">
-					<div class="login_block">
+					<div class="login_block" id="login_block">
 						<ul class="login_denglu">
-							<li class="active">账号登录</li>
-							<li class="saoma">扫码登录</li>
+							<li id="commontab" class="active">账号登录</li>
+							<li id="erweitab">扫码登录</li>
 						</ul>
-						<div class="active_content" style="display:block;">
+						<div class="content" style="display: block;">
 							<div class="active_box">
 								<div class="zhanghao">
 									<span class="icoName"></span>
-									<!-- <label class="input_Tip" style="display: block;">请输入账号</label> -->
-									<input type="text" class="input"/>
+									<input type="text" class="input" placeholder="请输入账号"/>
 								</div>
 								
 								<div class="mima">
 									<span class="icoPwd"></span>
-									<!-- <label class="input_Tip" style="display: block;">请输入登录密码</label> -->
-									<input type="password" class="input"/>
+									<input type="password" class="input" placeholder="请输入登录密码"/>
 								</div>
 								
 								<a href="#" class="confirm">登录</a>
@@ -45,14 +43,28 @@
 										<a href="#" style="color:#ed6d00">立即注册</a>
 									</p>
 									<p class="link_right">
-										<a href="#">忘记密码</a>
+										<a href="https://passport.kongzhong.com/pwdback/pwdemailback/pwdback_email">忘记密码</a>
 									</p>
-								</div>
+								</div>								
 							</div>
 						</div>
 						
-						<div class="saoma_content" style="display:none;">
-							
+						<div class="content sao" style="display: none;">
+							<div class="wx-img">
+								<img src="https://sso.kongzhong.com/createQRCode" >
+							</div>
+							<p class="wx-tips">
+								使用
+								<a href="http://k.kongzhong.com" style="color:#ed6d00">口袋密令</a>
+								扫描二维码安全登录
+							</p>
+						</div>
+						
+						<div class="thirdparty">
+							<span>第三方登录：</span>
+							<a class="bds_XL" href="https://api.weibo.com/oauth2/authorize?client_id=1949226531&response_type=code&state=0f1ce9e2881d90f0&redirect_uri=https%3A%2F%2Fpassport.kongzhong.com%2Fwblogin" title="新浪微博登录"></a>
+							<a class="bds_QQ" href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101413494&scope=get_user_info&state=0f1ce9e2881d90f0&redirect_uri=http%3A%2F%2Fpassport.kongzhong.com%2Fqqlogin" title="qq登录"></a>
+							<a class="bds_WX" href="https://open.weixin.qq.com/connect/qrconnect?appid=wx5b7da7335edff3a2&response_type=code&scope=snsapi_login&state=0f1ce9e2881d90f0&redirect_uri=https%3A%2F%2Fpassport.kongzhong.com%2Fwxlogin" title="微信登录"></a>
 						</div>
 					</div>
 				</div>
@@ -62,5 +74,40 @@
 		
 		
 		<!-- 底部 -->
+		<div class="reg_footbox">
+			<p>
+				<span>COPYRIGHT&nbsp;©&nbsp;1998 – 2017KONGZHONG. ALL RIGHTS RESERVED. </span>
+				空中网版权所有
+			</p>
+			<p>京ICP证020001号&nbsp;京网文[2011]0467–160号&nbsp;经营许可证编号:B2–20090197</p>
+		</div>
+		
+		
+		
+		
 	</body>
 </html>
+
+<script type="text/javascript">
+	var login_block = document.querySelector("#login_block");
+	var as = login_block.getElementsByTagName("li");
+	var divs = login_block.getElementsByClassName(".content");
+	
+	for( var i = 0 ; i < as.length; i++){
+		as[i].index = i;
+		as[i].onclick = function(){
+			for( var j = 0 ; j < as.length; j++){
+				as[j].className = "";
+				divs[j].style.display = "none";
+			}
+			this.className = "active";
+			var ind = this.index;
+			divs[ind].style.display = "block";
+		}
+	}
+	
+	
+</script>
+
+
+
