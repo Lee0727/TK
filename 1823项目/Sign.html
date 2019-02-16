@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>登录页面</title>
 		<link rel="stylesheet" type="text/css" href="css/Sign.css"/>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		
 	</head>
 	<body class="body_A">
 		
@@ -23,7 +25,7 @@
 							<li id="commontab" class="active">账号登录</li>
 							<li id="erweitab">扫码登录</li>
 						</ul>
-						<div class="content" style="display: block;">
+						<div class="content deng" style="display: block;">
 							<div class="active_box">
 								<div class="zhanghao">
 									<span class="icoName"></span>
@@ -40,7 +42,7 @@
 								<div class="nav_link">
 									<p class="link_left">
 										没有账号？
-										<a href="#" style="color:#ed6d00">立即注册</a>
+										<a href="http://127.0.0.1/TK/1823%E9%A1%B9%E7%9B%AE/register.html" style="color:#ed6d00">立即注册</a>
 									</p>
 									<p class="link_right">
 										<a href="https://passport.kongzhong.com/pwdback/pwdemailback/pwdback_email">忘记密码</a>
@@ -88,26 +90,7 @@
 	</body>
 </html>
 
-<script type="text/javascript">
-	var login_block = document.querySelector("#login_block");
-	var as = login_block.getElementsByTagName("li");
-	var divs = login_block.getElementsByClassName(".content");
-	
-	for( var i = 0 ; i < as.length; i++){
-		as[i].index = i;
-		as[i].onclick = function(){
-			for( var j = 0 ; j < as.length; j++){
-				as[j].className = "";
-				divs[j].style.display = "none";
-			}
-			this.className = "active";
-			var ind = this.index;
-			divs[ind].style.display = "block";
-		}
-	}
-	
-	
-</script>
+<script src="js/Sign%20in.js" type="text/javascript" charset="utf-8"></script>
 
 
 

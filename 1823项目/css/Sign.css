@@ -71,6 +71,14 @@ html, body {
 	display: inline;
 }
 
+.login_denglu{
+	display: block !important;
+}
+
+.login_block ul{
+	overflow: hidden;
+}
+
 .login_denglu li.active{
 	border-bottom: 4px solid #f60;
 	font-weight: bold;
@@ -82,7 +90,6 @@ html, body {
 	height: auto;
 	margin: 0 auto;
 	position: relative;
-	padding: 30px 0 0;
 }
 
 .zhanghao{
@@ -177,6 +184,7 @@ html, body {
 	margin-top: 32px;
 	border-top: 1px solid #efefef;
 	padding-left: 40px;
+	display: block !important;
 }
 
 .thirdparty span{
@@ -217,7 +225,7 @@ html, body {
 	width: 151px;
 	margin: 0 auto;
 	padding: 8px;
-	margin-top: 90px;
+	margin-top: 25px;
 	background: url(../img/Sign%20in/wxbg.jpg);
 }
 

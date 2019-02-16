@@ -81,7 +81,7 @@ body.regbg{
 	height: auto;
 	overflow: hidden;
 	float: left;
-	display: block;
+	display: block !important;
 }
 	
 .reg_left_tip{
@@ -116,7 +116,7 @@ body.regbg{
 .reg_main_content .left_main .tabs .click{
 	width: 199px;
 	background: url(../img/register/reg_left_tabsbg.png) 0 0 no-repeat;
-	
+	color: white;
 }
 
 .reg_main_content .left_main .tabs a{
@@ -126,6 +126,7 @@ body.regbg{
 	text-decoration: none;
 	cursor: pointer;
 	margin-top: 1px;
+	color: black;
 }
 
 /* .reg_main_content .left_main .tabs .link{
